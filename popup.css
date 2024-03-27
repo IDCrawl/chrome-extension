@@ -3,15 +3,20 @@ body {
     padding: 12px 24px 28px;
 }
 img.logo {
-    width: 98px;
-    height: 22px;
+    height: 20px;
     margin-left: 18px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 form {
     background-color: white;
     border-radius: 8px;
     padding: 16px;
+}
+form fieldset {
+    border-width: 1px;
+}
+form fieldset:nth-child(2) {
+    margin-top: 10px;
 }
 input {
     width: 160px;
@@ -29,4 +34,19 @@ button {
     background-color: #fc4a52;
     color: white;
     border-width: 0px !important;
+    letter-spacing: 0.05em;
+}
+select {
+    height: 20px;
+    width: 160px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0px;
+    outline: 0px;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%2333393C' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 0px;  
 }

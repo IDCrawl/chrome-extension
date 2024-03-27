@@ -11,8 +11,16 @@ function getIDCrawlURL(search) {
 
 function onSubmitForm(){
     var search = document.getElementById("search").value;
-    var url = getIDCrawlURL(search);
-    window.open(url, '_blank');
+    if (search == "") {
+        window.open(BASE_URL, '_blank');
+    } else {
+        var url = getIDCrawlURL(search);
+        var state = document.getElementById("state").value;
+        if (state != "") {
+            url = url + "/" + state;
+        }
+        window.open(url, '_blank'); 
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
